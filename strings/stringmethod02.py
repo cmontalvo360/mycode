@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Atla3 Research || Author: RZFeeser@alta3.com"""
 
-def main()
+def main():
     """ Run-time code"""
     # create a small string
     lilstring = "Alta3 Research offers classes on Python coding"
