@@ -25,8 +25,11 @@ def main():
     # the .json() method will dump a JSON string into Pythonic data structures. COOL!
     # This is much easier than using the urllib.request library
     cards = resp.json()
-
-    print(cards)
+    
+    with open(f"{setcode}_card.set", "w") as cardfile:
+        
+        for card in cards:
+            print(f"{card.keys()} -- {card.value()}", file=cardfile)
 
 if __name__ == "__main__":
     main()
